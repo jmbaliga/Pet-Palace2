@@ -1,0 +1,230 @@
+﻿<!doctype html>
+<html lang="en">
+<!-- This is an assignment for my Client-side Web Development class, Paul's Pet Palace is ficticous.  Thanks. -->
+<!-- This is PPP2 -->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143266012-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143266012-1');
+    </script>
+
+    <title>Julie Baliga - Paul's Pet Palace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/9abc6f4c0d.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster+Two&display=swap" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body id="cats" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><i class="fas fa-paw"></i> Paul's Pet Palace</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Pets
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dogs.html"><i class="fas fa-dog"></i> Dogs</a></li>
+                                <li> <a href="cats.html"><i class="fas fa-cat"></i> Cats</a></li>
+                                <li> <a href="birds.html"><i class="fas fa-crow"></i> Birds</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!---->
+        <div id="hero">
+
+            <div class="hero-text">
+
+            </div>
+        </div>
+        <main>
+
+            <div class="content">
+                <br /><br /><br />
+                <div class="col-xs-12 float-sm-left"><p id="gallery">Available Cats</p></div>
+                <div class="row" data-toggle="modal" data-target="#catModal">
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat1-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="0" id="galleryImage">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat2-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="1" id="galleryImage">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat3-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="2" id="galleryImage">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat4-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="3" id="galleryImage">
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat5-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="4" id="galleryImage">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat6-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="5" id="galleryImage">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat7-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="6" id="galleryImage">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img class="w-100" src="img/cat8-tn.jpg" alt="First slide" data-target="#myCarousel" data-slide-to="7" id="galleryImage">
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="catModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="img/cat1.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Brainy</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="img/cat2.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Princess</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="img/cat3.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Various Kittens</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="img/cat4.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Sammy</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="img/cat5.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Misty</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="img/cat6.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Shadow, Lucky &Aacute; Smokey</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="img/cat7.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Various Kittens</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="img/cat8.jpg" alt="Cat">
+                                            <div class="carousel-caption">
+                                                <h3>Max</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Lightbox-->
+                <div class="col-lg-12">
+                    <p>The cats and kittens on our website are not guaranteed to be available for sale.  Please call our store for the most up-to-date information.</p>
+                    <br />
+                </div>
+                <div class="col-lg-12">
+                    <div class="fb-like" data-href="https://jmbaliga.com/ppp2/index.html" data-width="50" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                    <br>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    <footer class="text-center">
+        <a class="up-arrow" href="cats.html" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p><span class="glyphicon glyphicon-copyright-mark"></span> Copyright 2019 Julie M. Baliga</p>
+    </footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
