@@ -1,0 +1,385 @@
+﻿@charset "utf-8";
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    color: #4B4B4B;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    a:link {
+        color: #483937;
+    }
+
+    a:visited {
+        color: #483937;
+    }
+
+    a:hover, a:active, a:focus {
+        color: #211b1a;
+        text-decoration: underline;
+    }
+h1.container-text {
+    width: 30%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    position: absolute;
+    color: #7396ac;
+    top: 10px;
+    left: 30px;
+    font-size: 6em;
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+    font-family: 'Lobster Two', cursive;
+}
+
+h1.container-text2 {
+    width: 30%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    position: absolute;
+    color: #7396ac;
+    top: 10px;
+    left: 30px;
+    font-size: 6em;
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+    font-family: 'Lobster Two', cursive;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1, h2 {
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0, 0, 0, 0;
+}
+
+#hero p {
+    color: #4B4B4B;
+    font-weight: 600;
+    font-size: 2em;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Lobster Two', cursive;
+    font-style: normal;
+}
+
+#hero {
+    position: relative;
+}
+
+main {
+    width: 100%;
+    float: left;
+    font-size: 0.875em;
+}
+
+.bg-img {
+    background-image: url("../img/cat5.jpg");
+    height: 900px;
+    position: relative;
+    max-width: 100%;
+    margin-left: 0px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2-img {
+    background-image: url("../img/cat9a.jpg");
+    height: 1440px;
+    position: relative;
+    max-width: 100%;
+    margin-left: 0px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.content {
+    margin-left: 5px;
+    padding: 1px 5px;
+    height: 3000px;
+    width: 100%;
+}
+
+
+.container {
+    padding: 10px 10px;
+}
+
+.container2 {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 400px;
+    padding: 16px;
+    background-color: white;
+    font-size: 1.5em;
+}
+
+#blurb {
+    background-color: white;
+    font-size: .8em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+#blurb-text {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2em;
+}
+
+#gallery {
+    padding: 200px, 0, 0, 0;
+    font-family: 'Lobster Two', cursive;
+    font-size: 4em;
+}
+
+#galleryImage {
+    padding: 20px;
+    
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: #7396ac;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+    .btn:hover, .btn:focus {
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #000;
+    }
+
+
+
+
+    .navbar {
+    margin-bottom: 0;
+    background-color: #1d242e;
+    border: 0;
+    font-size: 11px !important;
+    opacity: 0.9;
+}
+
+    
+.navbar li a, .navbar .navbar-brand {
+     color: white !important;
+    }
+
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+    background-color: #969696;
+}
+
+
+.navbar-nav li.active a {
+    color: white !important;
+    background-color: #1d242e !important;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+
+.open .dropdown-toggle {
+    color: white;
+    background-color: #555 !important;
+    border: 0;
+}
+
+.dropdown-menu li a {
+    color: white !important;
+    
+}
+
+.dropdown-menu li a:hover {
+    background-color: #c09d8b !important;
+    }
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    color: black;
+    font-size: .6em;
+    text-align: center;
+}
+
+
+.carousel-inner img {
+    width: 100%; 
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+    font-family: 'Kaushan Script', cursive;
+}
+
+@media (min-width: 900px) {
+
+
+    header {
+        overflow: hidden;
+    }
+
+    #hero p {
+        width: 30%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        position: absolute;
+        color: white;
+        top: 35px;
+        left: 33px;
+        font-size: 3em;
+        border-bottom-width: 0px;
+        border-bottom-style: none;
+        font-family: 'Lobster Two', cursive;
+    }
+
+    #hero {
+        position: relative;
+    }
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    h1.container-text {
+        width: 30%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        position: absolute;
+        color: #7396ac;
+        top: 10px;
+        left: 30px;
+        font-size: 6em;
+        border-bottom-width: 0px;
+        border-bottom-style: none;
+        font-family: 'Lobster Two', cursive;
+    }
+
+    h1.container-text2 {
+        width: 30%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        position: absolute;
+        color: #7396ac;
+        top: 10px;
+        left: 30px;
+        font-size: 6em;
+        border-bottom-width: 0px;
+        border-bottom-style: none;
+        font-family: 'Lobster Two', cursive;
+    }
+
+
+
+
+    #blurb {
+        background-color: white;
+        font-size: .8em;
+        overflow-wrap: break-word;
+    }
+
+    #blurb-text {
+        font-family: 'Lobster Two', cursive;
+        font-size: 2em;
+    }
+
+    #gallery {
+        padding: 200px, 0, 0, 0;
+        font-family: 'Lobster Two', cursive;
+        font-size: 4em;
+    }
+
+    main {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        float: left;
+        font-size: 0.875em;
+        position: relative;
+    }
+
+
+    footer {
+        clear: left;
+    }
+
+    .dropdown-menu li a {
+        color: #1d242e !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .floatright {
+        float: right;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .floatleft {
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+   
+
+    h1.container-text {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+    h1.container-text {
+        display: none;
+    }
+}
+
+
